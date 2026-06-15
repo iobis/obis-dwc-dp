@@ -96,4 +96,52 @@ Ignoring DwC-DP implications for now, the data duplication issue with Event core
 - Limiting the R package to occurrences records with directly linked extension records, or adding download functionality to the R package
 - Changing the way dataset statistics are made available to the OBIS website
 
+Another option to consider is that extension records are kept in separate files as well. This would mean more joins, but it is likely to be more compatible with DwC-DP which also has many tables that can be flexibly linked together.
+
+### Prototyping a solution
+
+For prototyping a solution I'm proposing the following data schema for Parquet files. This is back to basic with table joins straight on the relevant Darwin Core terms.
+
+Event:
+
+```json
+{
+  "dataset_id": "",
+  "source": {},
+  "interpreted": {
+    "eventID": "",
+    "parentEventID": "",
+    // ...
+  }
+}
+```
+
+Occurrence:
+
+```json
+{
+  "dataset_id": "",
+  "source": {},
+  "interpreted": {
+    "eventID": "",
+    "occurrenceID": "",
+    // ...
+  }
+}
+```
+
+ExtendedMeasurementOrFact (possibly split between event and occurrence level):
+
+```json
+{
+  "dataset_id": "",
+  "source": {},
+  "interpreted": {
+    "eventID": "",
+    "occurrenceID": "",
+    // ...
+  }
+}
+```
+
 ### For DwC-DP
