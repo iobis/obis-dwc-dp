@@ -4,18 +4,18 @@ DRAFT DOCUMENT
 
 ## What is Darwin Core Data Package (DwC-DP)?
 
-Darwin Core Data Package is a community-developed container format to exchange biodiversity data. It extends the [Data Package specification](https://specs.frictionlessdata.io/) developed by Frictionless Data as an implementation for the [Darwin Core Conceptual Model](https://gbif.github.io/dwc-dp/cm/). It complements the [Darwin Core Archive (DwC-A)](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide) standard which is commonly used in OBIS and GBIF.
+Darwin Core Data Package is a community-developed container format to exchange biodiversity data. It extends the [Data Package specification](https://specs.frictionlessdata.io/) developed by Frictionless Data as an implementation for the [Darwin Core Conceptual Model](https://gbif.github.io/dwc-dp/cm/) (DwC-CM). It complements the [Darwin Core Archive](https://ipt.gbif.org/manual/en/ipt/latest/dwca-guide) (DwC-A) standard which is commonly used in OBIS and GBIF.
 
 Documentation:
 
-| Resource                          | URL                                                                        |
-| --------------------------------- | -------------------------------------------------------------------------- |
-| Darwin Core Conceptual Model      | <https://dwc.tdwg.org/cm/>                                                 |
-| Darwin Core Data Package guide    | <https://dwc.tdwg.org/dp/>                                                 |
-| Darwin Core Data Package Designer | <https://gbif.github.io/dwc-dp/designer/>                                  |
-| DwC-DP table schemas              | <https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-dp/1.0/table-schemas> |
-| DwC-DP test IPT                   | <https://dwcdp-ipt.gbif-test.org>                                          |
-| DwC-DP dataset examples           | <https://github.com/gbif/dwc-dp-examples>                                  |
+| Resource                              | URL                                                                        |
+| ------------------------------------- | -------------------------------------------------------------------------- |
+| Darwin Core Conceptual Model (DwC-CM) | <https://dwc.tdwg.org/cm/>                                                 |
+| Darwin Core Data Package guide        | <https://dwc.tdwg.org/dp/>                                                 |
+| Darwin Core Data Package Designer     | <https://gbif.github.io/dwc-dp/designer/>                                  |
+| DwC-DP table schemas                  | <https://github.com/tdwg/rs.tdwg.org/tree/master/dwc-dp/1.0/table-schemas> |
+| DwC-DP test IPT                       | <https://dwcdp-ipt.gbif-test.org>                                          |
+| DwC-DP dataset examples               | <https://github.com/gbif/dwc-dp-examples>                                  |
 
 ## How data are indexed in OBIS now
 
