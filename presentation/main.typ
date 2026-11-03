@@ -122,7 +122,9 @@
     - Foreign keys (have a `predicate` property to document relationship semantics)
 ]
 
-#slide(title: [Darwin Core Data Package])[
+#section[In practice]
+
+#slide(title: [Example dataset: ARMS])[
   #align(center)[
     #box[
       #image("assets/arms.svg", height: 410pt)
@@ -137,4 +139,24 @@
       ]
     ]
   ]
+]
+
+#slide(title: [OBIS indexing])[
+  #grid(
+    columns: (1fr, auto),
+    column-gutter: 48pt,
+    align: horizon,
+    [
+      == Implementation proposal
+      
+      === Phase 1
+      
+      Project most common patterns to existing index (Event and Occurrence)
+      
+      === Phase 2
+      
+      Provide SQL-like access to full data model
+    ],
+    image("assets/dwc-cm-boxes.png", height: 380pt),
+  )
 ]
