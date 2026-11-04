@@ -215,3 +215,12 @@
   ]
 ]
 
+#slide(title: [The other eDNA issue])[
+
+  Proposal: keep extension records in separate tables, provide tooling for user side joining.
+
+  #align(center)[
+    #image("../diagrams/indexing.svg", height: 380pt)
+  ]
+]
+
