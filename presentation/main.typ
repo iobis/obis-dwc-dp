@@ -194,6 +194,18 @@
 
 ]
 
+#slide(title: [But... eDNA])[
+
+  DwC-DP offers a solution through the `nucleotide-analysis` table.
+
+  #v(30pt)
+
+  #align(center)[
+    #image("../diagrams/edna-index.svg", height: 240pt)
+  ]
+
+]
+
 #slide(title: [The other eDNA issue])[
 
   Current indexing repeats Event level measurement at every occurrence, which is problematic in particular for high volume eDNA datasets.
