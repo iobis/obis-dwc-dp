@@ -208,7 +208,7 @@
 
 #slide(title: [The other eDNA issue])[
 
-  Current indexing repeats Event level measurement at every occurrence, which is problematic in particular for high volume eDNA datasets.
+  Event when using Event Core, current indexing repeats Event level measurement at every occurrence, which is problematic in particular for high volume eDNA datasets.
 
   #align(center)[
     #image("../diagrams/indexing-old.svg", height: 380pt)
