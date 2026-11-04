@@ -160,3 +160,46 @@
     image("assets/dwc-cm-boxes.png", height: 380pt),
   )
 ]
+
+
+#slide(title: [But... eDNA])[
+
+  The DNADerivedData extension is not a very efficient way of storing sequence data, as identical sequences are repeated for every sample.
+
+  #v(30pt)
+
+  ```
+  ➜  b508f7bc-8708-43d5-b940-e44f2765d1af ls -alh
+  total 319219120
+  drwx------  7 pieter  staff   224B Nov  4 12:16 .
+  drwxr-xr-x@ 5 pieter  staff   160B Nov  4 12:16 ..
+  -rw-rw-r--  1 pieter  staff    21G Dec 23  2025 dnaderiveddata.txt
+  -rw-rw-r--  1 pieter  staff   4.5K Dec 23  2025 eml.xml
+  -rw-rw-r--  1 pieter  staff   126G Dec 23  2025 extendedmeasurementorfact.txt
+  -rw-rw-r--  1 pieter  staff   5.0K Dec 23  2025 meta.xml
+  -rw-rw-r--  1 pieter  staff   5.9G Dec 23  2025 occurrence.txt
+  ```
+
+]
+
+#slide(title: [But... eDNA])[
+
+  DwC-DP offers a solution through the `nucleotide-analysis` table.
+
+  #v(30pt)
+
+  #align(center)[
+    #image("../diagrams/nucleotide-foreign-keys.svg", height: 320pt)
+  ]
+
+]
+
+#slide(title: [The other eDNA issue])[
+
+  Current indexing repeats Event level measurement at every occurrence, which is problematic in particular for high volume eDNA datasets.
+
+  #align(center)[
+    #image("../diagrams/indexing-old.svg", height: 380pt)
+  ]
+]
+
